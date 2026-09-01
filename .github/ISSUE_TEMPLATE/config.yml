@@ -1,0 +1,12 @@
+# Canonical source: server-source/packaging/carrier/server/.github/ISSUE_TEMPLATE/config.yml — do not edit here by hand.
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://docs.zenvara.ai
+    about: Installation, configuration, flow authoring, operator catalog, deployment, and full reference.
+  - name: 💬 Questions & Discussions
+    url: https://github.com/zenvara-platform/server/discussions
+    about: Ask questions, share patterns, and discuss ideas before filing an issue.
+  - name: 🔒 Security vulnerability
+    url: https://github.com/zenvara-platform/server/security/policy
+    about: Do NOT open a public issue for vulnerabilities — email security@zenvara.ai instead.

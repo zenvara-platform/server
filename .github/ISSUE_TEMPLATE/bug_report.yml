@@ -1,0 +1,60 @@
+# Canonical source: server-source/packaging/carrier/server/.github/ISSUE_TEMPLATE/bug_report.yml — do not edit here by hand.
+name: 🐞 Bug report
+description: Report a defect in Zenvara.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, please check the [troubleshooting guide](https://docs.zenvara.ai/getting-started/troubleshooting/) and search [existing issues](https://github.com/zenvara-platform/server/issues).
+        ⚠️ **Security vulnerabilities:** email **security@zenvara.ai** — do not report them here.
+  - type: input
+    id: version
+    attributes:
+      label: Zenvara version
+      description: From `GET /api/v1/platform/diagnostics` or the release you installed.
+      placeholder: "3.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment target
+      options:
+        - Windows Service
+        - Linux + systemd
+        - IIS
+        - Docker
+        - Kubernetes
+        - Zenvara Studio (desktop app)
+        - Other / local run
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS / architecture
+      placeholder: "Ubuntu 24.04 x64, Windows Server 2022, macOS 15 arm64, …"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Deploy flow X…
+        2. Trigger via…
+        3. Observe…
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Redact secrets, connection strings, and credentials before pasting.
+      render: text

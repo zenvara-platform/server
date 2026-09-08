@@ -58,14 +58,13 @@ C:\Zenvara\Zenvara.App.exe
 
 ### macOS
 
-Download `zenvara-osx-arm64.tar.gz` (Apple Silicon) or `zenvara-osx-x64.tar.gz` (Intel), then:
+**Not supported in 3.0.0.** No macOS build is published for this release, so
+there is nothing to download here. Support is expected in 3.0.1, once the
+binaries are code-signed — an unsigned build is terminated by the kernel at
+launch on current macOS, which is why shipping one anyway would be worse than
+shipping none.
 
-```bash
-mkdir -p ~/zenvara
-tar xzf zenvara-osx-arm64.tar.gz -C ~/zenvara
-xattr -dr com.apple.quarantine ~/zenvara   # clear Gatekeeper quarantine
-~/zenvara/Zenvara.App
-```
+Run the server on Linux or Windows, or use Docker on a Mac.
 
 For more information, refer to the [official documentation site](https://docs.zenvara.ai).
 

@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        You can also submit feature requests from inside Zenvara (`submit-feature-request` via MCP, or `POST /api/v1/platform/support`) — that route attaches your installation fingerprint automatically.
+        You can also submit feature requests from inside Zenvara (`submit-support-request` with `kind=feature` via MCP, or `POST /api/v1/platform/support`) — that route attaches your installation fingerprint automatically.
   - type: textarea
     id: problem
     attributes:

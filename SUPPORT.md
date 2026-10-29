@@ -14,7 +14,7 @@
 
 Zenvara has built-in **support** and **feature-request** channels that attach your installation fingerprint automatically:
 
-- `submit-support-request` / `submit-feature-request` via MCP
+- `submit-support-request` via MCP (`kind=feature` for a feature request)
 - `POST /api/v1/platform/support`
 
 Use these for issues tied to your specific installation — they carry the diagnostics we need.

@@ -58,11 +58,10 @@ C:\Zenvara\Zenvara.App.exe
 
 ### macOS
 
-**Not supported in 3.0.0.** No macOS build is published for this release, so
-there is nothing to download here. Support is expected in 3.0.1, once the
-binaries are code-signed — an unsigned build is terminated by the kernel at
-launch on current macOS, which is why shipping one anyway would be worse than
-shipping none.
+**Not supported yet.** No macOS build is published, so there is nothing to
+download here. macOS builds return once the binaries are code-signed and
+notarized — an unsigned build is terminated by the kernel at launch on current
+macOS, which is why shipping one anyway would be worse than shipping none.
 
 Run the server on Linux or Windows, or use Docker on a Mac.
 
